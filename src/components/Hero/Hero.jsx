@@ -1,7 +1,11 @@
 import React from "react";
-import "./Hero.css";
 import Header from "../Header/Header";
-const hero = () => {
+import "./Hero.css";
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png";
+const Hero = () => {
   return (
     <div className="hero">
       <div className="left-h">
@@ -40,7 +44,7 @@ const hero = () => {
           </div>
           <div>
             <span>50</span>
-            <span>Fitenss programs</span>
+            <span>Fitness programs</span>
           </div>
         </div>
 
@@ -50,9 +54,30 @@ const hero = () => {
           <buttons className="btn">Learn More</buttons>
         </div>
       </div>
-      <div className="right-h">right-side</div>
+      <div className="right-h">
+        <button className="btn">Join Now</button>
+
+        <div className="heart-rate">
+          <img src={Heart} alt="" />
+          <span>Heart Rate</span>
+          <span>110 BPM</span>
+        </div>
+
+        {/* hero images */}
+        <img src={hero_image} alt="" className="hero-image" />
+        <img src={hero_image_back} alt="" className="hero-image-back" />
+
+        {/* calories */}
+        <div className="calories">
+          <img src={Calories} alt="" />
+          <div>
+            <span>Calories Burnt</span>
+            <span>220 kcal</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default hero;
+export default Hero;
