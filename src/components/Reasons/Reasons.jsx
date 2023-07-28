@@ -18,7 +18,51 @@ const Reasons = () => {
         <img src={image3} alt="" />
         <img src={image4} alt="" />
       </div>
-      <div className="right-r"></div>
+      <div className="right-r">
+        <span>some reasons</span>
+
+        <div>
+          <span className="stroke-text">why</span>
+          <span> choose us?</span>
+        </div>
+
+        <div className="details-r">
+          <div>
+            <img src={tick} alt=""></img>
+            <span>over 20+ expert coaches</span>
+          </div>
+          <div>
+            <img src={tick} alt="" />
+            <span>all new machines and equipments</span>
+          </div>
+          <div>
+            <img src={tick} alt="" />
+            <span>3 days trial</span>
+          </div>
+          <div>
+            <img src={tick} alt="" />
+            <span>Open seven days</span>
+          </div>
+          <div>
+            <img src={tick} alt="" />
+            <span>diet plan assistance</span>
+          </div>
+        </div>
+        <span
+          style={{
+            color: "var(--gray)",
+            fontWeight: "normal",
+          }}
+        >
+          BRAND PARTNERS
+        </span>
+
+        <div className="partners">
+          <img src={nb} alt="" />
+          <img src={nike} alt="" />
+          <img src={adidas} alt="" />
+        </div>
+      </div>
     </div>
   );
 };
