@@ -54,7 +54,7 @@ export const plansData = [
     price: "14,999",
     features: [
       "Exclusive access to all facilities",
-      "Complimentary fitness classes",
+      "Complimentary yoga classes",
       "24/7 gym availability",
       "Healthy meals pre and post-workout"
     ],
