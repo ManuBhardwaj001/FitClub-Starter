@@ -26,7 +26,12 @@
   align-items: center;
   gap: 3rem;
 }
-.plan:hover {
+.plan-0:hover ~ .plan-1 {
+  transform: scale(1);
+  background: var(--caloryCard);
+}
+
+.plan-0:hover {
   background: var(--planCard);
   transform: scale(1.1);
 }
@@ -91,4 +96,16 @@
 
 .feature > img {
   width: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+  }
+  .plans > :nth-child(2) {
+    transform: none;
+  }
+  .plan-0:hover {
+    background: var(--caloryCard);
+    transform: none;
+  }
 }

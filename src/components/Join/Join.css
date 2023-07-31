@@ -83,3 +83,23 @@
 .btn-j {
   color: var(--orange);
 }
+
+@media screen and (max-width: 768px) {
+  .Join {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .left-j {
+    font-size: xx-large;
+    flex-direction: column;
+  }
+  .right-j {
+    padding: 2rem;
+    align-self: center;
+  }
+  .email-container {
+    gap: 0.8rem;
+    background: transparent;
+  }
+}
