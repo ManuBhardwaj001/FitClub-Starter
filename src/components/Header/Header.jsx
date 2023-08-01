@@ -32,7 +32,7 @@ const Header = () => {
               activeClass="active"
               onClick={() => setMenuOpened(false)}
               to="Home"
-              span={true}
+              span="true"
               smooth={true}
             >
               Home
@@ -42,7 +42,7 @@ const Header = () => {
             <Link
               onClick={() => setMenuOpened(false)}
               to="Programs"
-              span={true}
+              span="true"
               smooth={true}
             >
               Programs
@@ -52,7 +52,7 @@ const Header = () => {
             <Link
               onClick={() => setMenuOpened(false)}
               to="Reasons"
-              span={true}
+              span="true"
               smooth={true}
             >
               Why us
@@ -62,7 +62,7 @@ const Header = () => {
             <Link
               onClick={() => setMenuOpened(false)}
               to="Plans"
-              span={true}
+              span="true"
               smooth={true}
             >
               Plans
@@ -72,7 +72,7 @@ const Header = () => {
             <Link
               onClick={() => setMenuOpened(false)}
               to="Testimonials"
-              span={true}
+              span="true"
               smooth={true}
             >
               Testimonials

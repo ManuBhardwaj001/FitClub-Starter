@@ -20,7 +20,7 @@ const Plans = () => {
             <span>₹{plan.price}</span>
             <div className="features">
               {plan.features.map((feature, i) => (
-                <div className="feature">
+                <div className="feature" key={i}>
                   <img src={whiteTick} alt="" />
                   <span key={i}>{feature}</span>
                 </div>
