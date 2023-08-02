@@ -4,6 +4,8 @@ import Github from "../../assets/github.png";
 import Insta from "../../assets/instagram.png";
 import Linkedin from "../../assets/linkedin.png";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-scroll";
+
 const Footer = () => {
   return (
     <div className="Footer-container">
@@ -14,9 +16,11 @@ const Footer = () => {
           <img src={Insta} alt="" />
           <img src={Linkedin} alt="" />
         </div>
-        <div className="logo-f">
-          <img src={Logo} alt="" />
-        </div>
+        <Link to="Home" smooth={true} duration={1000}>
+          <div className="logo-f">
+            <img src={Logo} alt="" style={{ cursor: "pointer" }} />
+          </div>
+        </Link>
       </div>
     </div>
   );

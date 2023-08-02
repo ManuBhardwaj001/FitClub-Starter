@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Join.css";
 import emailjs from "@emailjs/browser";
+
 const Join = () => {
   const form = useRef();
 
@@ -23,6 +24,7 @@ const Join = () => {
         }
       );
   };
+
   return (
     <div className="Join" id="join-us">
       <div className="left-j">
@@ -38,7 +40,7 @@ const Join = () => {
       </div>
       <div className="right-j">
         <span className="gradient">Signup for our newsletter</span>
-        <form ref={form} className="email-container" action={sendEmail}>
+        <form ref={form} className="email-container" onSubmit={sendEmail}>
           <input
             type="email"
             name="user_email"
