@@ -3,7 +3,7 @@ import "./Footer.css";
 import Github from "../../assets/github.png";
 import Insta from "../../assets/instagram.png";
 import Linkedin from "../../assets/linkedin.png";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.svg";
 import { Link } from "react-scroll";
 
 const Footer = () => {
