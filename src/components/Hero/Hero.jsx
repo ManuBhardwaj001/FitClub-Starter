@@ -8,7 +8,7 @@ import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 const Hero = () => {
-  const transition = { type: "spring", duration: 3 };
+  const transition = { type: "spring", duration: 2 };
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
     <div className="hero" id="Home">
@@ -45,19 +45,19 @@ const Hero = () => {
         <div className="figures">
           <div>
             <span>
-              <NumberCounter end={120} start={100} delay="3" preFix="+" />
+              <NumberCounter end={120} start={100} delay="2" preFix="+" />
             </span>
             <span>expert coaches</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={1800} start={1700} delay="3" preFix="+" />
+              <NumberCounter end={1800} start={1700} delay="2" preFix="+" />
             </span>
             <span>members joined</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={50} start={15} delay="3" preFix="+" />
+              <NumberCounter end={50} start={15} delay="2" preFix="+" />
             </span>
             <span>Fitness programs</span>
           </div>
@@ -98,7 +98,7 @@ const Hero = () => {
         <motion.div
           initial={{ right: "25rem" }}
           whileInView={{ right: "30rem" }}
-          transition={{ ...transition, type: "tween", time: 3 }}
+          transition={{ ...transition, type: "tween", time: 2 }}
           className="calories"
         >
           <img src={Calories} alt="" />

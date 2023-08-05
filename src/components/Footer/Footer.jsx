@@ -12,9 +12,13 @@ const Footer = () => {
       <hr />
       <div className="footer">
         <div className="social">
-          <img src={Github} alt="" />
+          <a href="https://github.com/ManuBhardwaj001">
+          <img className="git" src={Github} alt="" />
+          </a>
           <img src={Insta} alt="" />
-          <img src={Linkedin} alt="" />
+          <a href="https://www.linkedin.com/in/manu-bhardwaj-467290282">
+          <img className="linkedin" src={Linkedin} alt="" />
+          </a>
         </div>
         <Link to="Home" smooth={true} duration={1000}>
           <div className="logo-f">

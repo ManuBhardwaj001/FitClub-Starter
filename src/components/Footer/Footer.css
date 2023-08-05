@@ -7,13 +7,12 @@
 }
 
 .footer {
-  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
-  height: 20rem;
+  height: 15rem;
 }
 
 .social {
@@ -21,12 +20,12 @@
   gap: 4rem;
 }
 
-.social > img {
+.social img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
 
 .logo-f > img {
-  width: 10rem;
+  width: 13rem;
 }

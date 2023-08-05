@@ -43,7 +43,7 @@
   color: white;
   gap: 2rem;
   padding: 1.5rem;
-  width: 15rem;
+  width: 17rem;
   transition: background-color 0.3s, transform 0.3s;
   cursor: pointer;
 }

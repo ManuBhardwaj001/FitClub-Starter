@@ -1,5 +1,6 @@
 .Join {
   display: flex;
+  justify-content: space-between;
   padding: 0 2rem;
   gap: 10rem;
 }
@@ -22,11 +23,12 @@
   width: 10.5rem;
   border: 2px solid var(--orange);
   border-radius: 20%;
-  margin: -10px 0;
+  margin: -2rem 0;
 }
 
 .right-j {
   display: flex;
+  margin-right: 6rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -77,6 +79,7 @@
 
 .email-container > input {
   border-radius: 3px;
+  padding-left: 0.7rem;
   border-color: transparent;
 }
 

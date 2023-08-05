@@ -111,11 +111,18 @@
 
 .right-h > .btn {
   position: absolute;
+  font-size: .9rem;
+  padding: 0.7rem;
   right: 3rem;
   top: 2rem;
+  border-radius: 3px;
   color: black;
 }
 
+.right-h > .btn:hover{
+  background: var(--darkGrey);
+  color: #ffffff;
+}
 .heart-rate {
   display: flex;
   flex-direction: column;
