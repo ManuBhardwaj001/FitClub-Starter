@@ -1,8 +1,36 @@
 import React from "react";
+import { useEffect } from "react";
 import "./Plans.css";
 import whiteTick from "../../assets/whiteTick.png";
 import { plansData } from "../../data/plansData";
 const Plans = () => {
+  useEffect(() => {
+    const third = document.getElementsByClassName("plan-2")[0];
+    const second = document.getElementsByClassName("plan-1")[0];
+    third.addEventListener("mouseleave", () => dehighlightThird(second, third));
+    third.addEventListener("mouseenter", () => highlightThird(second, third));
+  }, []);
+
+  const highlightThird = (second, third) => {
+    second.style.background = "gray";
+    second.style.transform = "scale(1)";
+
+    third.style.background =
+      "linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%)";
+    third.style.transition = "background-color 0.3s, transform 0.3s";
+    third.style.transform = "scale(1.1)";
+  };
+
+  const dehighlightThird = (second, third) => {
+    second.style.background =
+      "linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%)";
+    second.style.transition = "background-color 0.3s, transform 0.3s";
+    second.style.transform = "scale(1.1)";
+
+    third.style.background = "gray";
+    third.style.transform = "scale(1)";
+  };
+
   return (
     <div className="plans-container" id="Plans">
       <div className="blur plans-blur-1"></div>

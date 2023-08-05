@@ -29,3 +29,32 @@
 .logo-f > img {
   width: 13rem;
 }
+.copyright {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.copyright a {
+  text-decoration: none;
+  display: flex;
+}
+.term {
+  color: white;
+}
+.copy {
+  color: white;
+}
+.copy:hover {
+  color: var(--orange);
+}
+.term:hover {
+  color: var(--orange);
+}
+.pipe {
+  color: white;
+}
+.pipe:hover {
+  color: var(--orange);
+}

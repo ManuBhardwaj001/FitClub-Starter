@@ -27,6 +27,10 @@
   gap: 3rem;
 }
 .plan-0:hover ~ .plan-1 {
+  transform: scale(1) !important;
+  background: var(--caloryCard) !important;
+}
+.plan-2:hover ~ .plan-1 {
   transform: scale(1);
   background: var(--caloryCard);
 }
