@@ -12,7 +12,7 @@ const Plans = () => {
   }, []);
 
   const highlightThird = (second, third) => {
-    second.style.background = "gray";
+    second.style.background = "#656565";
     second.style.transform = "scale(1)";
 
     third.style.background =
@@ -27,7 +27,7 @@ const Plans = () => {
     second.style.transition = "background-color 0.3s, transform 0.3s";
     second.style.transform = "scale(1.1)";
 
-    third.style.background = "gray";
+    third.style.background = "#656565";
     third.style.transform = "scale(1)";
   };
 
