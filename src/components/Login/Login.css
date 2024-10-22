@@ -1,0 +1,63 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  color: white; /* Set white text color for the entire container */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #363d42; /* Updated background color */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000; /* Ensure input text remains black */
+}
+
+.login-button {
+  background-color: var(--orange);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-link {
+  color: white; /* Ensure the sign-up link is white */
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-form label,
+.login-form p {
+  color: white; /* Ensure all labels and paragraphs are white */
+}
+
+h2 {
+  color: white; /* Ensure the "Login" heading is white */
+}
+
+p {
+  color: white; /* Ensure the "Don't have an account?" text is white */
+}
+.error-message {
+  color: red; /* You can customize this color */
+  margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+.Tutorials {
+    padding: 2rem;
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .tutorials-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .video-category {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .video-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--orange);
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tutorials-header {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  

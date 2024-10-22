@@ -1,23 +1,45 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Align items vertically centered */
+  padding: 1rem; /* Add padding to the header */
+  background-color: #333; /* Example background color */
 }
 
 .logo {
   width: 10rem;
-  height: 3rem;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .header-menu {
   list-style: none;
   display: flex;
   gap: 2rem;
-  color: white;
+  color: white; /* Text color */
 }
 
-.header-menu > li:hover {
-  cursor: pointer;
-  color: var(--orange);
+.header-menu > li > a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  transition: color 0.3s; /* Transition effect on hover */
+}
+
+.header-menu > li > a:hover {
+  color: #FFA500; /* Change color on hover (orange) */
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  background-color: #FFA500; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.login-btn:hover {
+  background-color: #ff8c00; /* Darker shade on hover */
 }
 
 @media screen and (max-width: 768px) {
@@ -28,7 +50,7 @@
   }
   .header-menu {
     flex-direction: column;
-    background-color: var(--appColor);
+    background-color: #333; /* Match the header background color */
     padding: 2rem;
   }
 }

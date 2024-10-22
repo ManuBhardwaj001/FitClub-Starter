@@ -51,6 +51,26 @@ const Header = () => {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
+              to="BMI"
+              span="true"
+              smooth={true}
+            >
+              BMI
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="DietRecommendation"
+              span="true"
+              smooth={true}
+            >
+              Diet Recommendation
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
               to="Reasons"
               span="true"
               smooth={true}
