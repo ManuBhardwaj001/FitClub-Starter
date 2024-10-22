@@ -1,0 +1,51 @@
+/* Base styles for the alert */
+.alert {
+    padding: 16px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Success Alert */
+  .alert.success {
+    background-color: #28a745;
+  }
+  
+  /* Error Alert */
+  .alert.error {
+    background-color: #dc3545;
+  }
+  
+  /* Info Alert */
+  .alert.info {
+    background-color: #007bff;
+  }
+  
+  /* Warning Alert */
+  .alert.warning {
+    background-color: #ffc107;
+  }
+  
+  /* Alert Message */
+  .alert-message {
+    margin-right: 10px;
+  }
+  
+  /* Close Button */
+  .alert-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+  }
+  

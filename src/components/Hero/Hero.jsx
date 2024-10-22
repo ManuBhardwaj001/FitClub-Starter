@@ -1,5 +1,5 @@
-import React from "react";
-import Header from "../Header/Header";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Hero.css";
 import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
@@ -7,9 +7,28 @@ import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
+import Header from "../Header/Header";
+
 const Hero = () => {
+  const [userName, setUserName] = useState(null);
+  const history = useNavigate();
+
+  useEffect(() => {
+    const name = localStorage.getItem('userName');
+    if (name) {
+      setUserName(name);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('userName'); // Remove user name from local storage
+    setUserName(null); // Clear user name state
+    history('/login'); // Redirect to the login page
+  };
+
   const transition = { type: "tween", duration: 2 };
   const mobile = window.innerWidth <= 768 ? true : false;
+
   return (
     <div className="hero" id="Home">
       <div className="blur hero-blur"></div>
@@ -24,7 +43,6 @@ const Hero = () => {
           <span>the best fitness club in the town</span>
         </div>
 
-        {/* Hero heading */}
         <div className="hero-text">
           <div>
             <span className="stroke-text">Shape </span>
@@ -41,7 +59,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* figures */}
         <div className="figures">
           <div>
             <span>
@@ -63,15 +80,20 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* hero buttons */}
         <div className="hero-buttons">
-          <button className="btn">Get Started</button>
-          <button className="btn">Learn More</button>
+          {!userName ? (
+            <button className="btn">
+              <Link to='/login'>Login</Link>
+            </button>
+          ) : (
+            <div>
+              <h3>Welcome, {userName}!</h3>
+              <button className="btn" onClick={handleLogout}>Logout</button>
+            </div>
+          )}
         </div>
       </div>
       <div className="right-h">
-        <button className="btn">Join Now</button>
-
         <motion.div
           transition={{ ...transition, type: "tween" }}
           initial={{ right: "-1rem" }}
@@ -83,7 +105,6 @@ const Hero = () => {
           <span>110 BPM</span>
         </motion.div>
 
-        {/* hero images */}
         <img src={hero_image} alt="" className="hero-image" />
         <motion.img
           initial={{ right: "11rem" }}
@@ -94,7 +115,6 @@ const Hero = () => {
           className="hero-image-back"
         />
 
-        {/* calories */}
         <motion.div
           initial={{ right: "25rem" }}
           whileInView={{ right: "30rem" }}
